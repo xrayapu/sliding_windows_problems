@@ -11,7 +11,7 @@ def sol(arr,k):
         j+=1
       elif j-i+1 ==k:
         mx=max(mx,add)
-        add=add- arr[i]
+        add=add- arr[i] #type of kick off the used item ,to reuse rest of it again
         i+=1
         j+=1
   
