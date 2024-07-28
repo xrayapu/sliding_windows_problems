@@ -27,3 +27,5 @@ def sol(arr,k):
     return ans
 
 print(sol([1,3,-1,-3,5,3,6,7],3))
+
+# it works on small input and gets time limit for large input value ! 
