@@ -17,6 +17,8 @@ def sol(arr,k):
         else: 
             while ans > k:
                 ans-= arr[i]
+                if ans== k:
+                    ans=max(ans, j-i+1)
                 i+=1
                 
             j+=1
