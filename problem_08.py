@@ -1,5 +1,7 @@
 # problem -08:pick up toys. same problem as 06 but k=2 here just ! 
 
+# leetcode 904: fruits on busket  problem.
+
 def sol(arr,k):
     i=j=0
     m={}
@@ -12,10 +14,7 @@ def sol(arr,k):
 
         else: m[arr[j]] =1
 
-        if len(m) < k:
-            j+=1
-
-        elif len(m) ==k:
+        if len(m) <=k: # change point ! 
             mx=max(mx, j-i+1)
             j+=1
 
