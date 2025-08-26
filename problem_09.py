@@ -17,7 +17,10 @@ def sol(arr, k):
             j+=1
 
         elif len(m)== k:
-            ans= max(ans, j-i+1)
+            if ans < j-i+1:
+                ans= j-i+1
+                st, rt= i,j
+                
             j+=1
 
         else:
@@ -32,7 +35,7 @@ def sol(arr, k):
 
             j+=1
 
-    return arr[i:]
+    return arr[st:rt+1]
 
 
 print(sol('aabacbebebe',3))
